@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adesh Laxman Tengale</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="E:\portfolio_website\static\style.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+
+    <style>
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .site-hero {
+            height: 100vh;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .site-hero1 {
+            padding: 60px 0;
+            color: rgb(246, 242, 242);
+            text-align: center;
+        }
+        .site-hero h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 70px;
+            animation: fadeInDown 2s ease-out;
+            padding-bottom: 10px;
+        }
+        .site-hero .subheading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: -20px;
+            animation: fadeInUp 2s ease-out;
+        }
+        .site-section {
+            padding: 60px 0;
+            color: rgb(21, 21, 21);
+        }
+        .site-section1 {
+            padding: 60px 0;
+            color: rgb(248, 241, 241);
+        }
+        .section-heading {
+            margin-bottom: 50px;
+        }
+        .project-box, .education-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .social-icons a {
+            color: #343a40;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .btn-1 {
+            background-color: #343a40;
+            color: white;
+        }
+        .btn-1:hover {
+            background-color: #495057;
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes typewriter {
+            0% { width: 0; }
+            70% { width: 100%; }
+            100% { width: 100%; }
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        .glitch {
+            font-size: 80px;
+            color: rgb(226, 128, 15);
+            overflow: hidden;
+            background-color: #ddd;
+            font-weight: bolder;
+            white-space: nowrap;
+            animation: typewriter 4s steps(40, end) 1s 1 normal both;
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            position: relative;
+        }
+        .text_1 {
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            position: relative;
+            font-size: 30px;
+            color: white;
+            animation: fadeIn 2s;
+            width: 100%;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .site-hero h1 {
+                font-size: 30px;
+            }
+            .glitch {
+                font-size: 30px;
+            }
+            .text_1 {
+                font-size: 20px;
+            }
+        }
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 150px; /* Adjust width as needed */
+            background: #343a40;
+            overflow-x: hidden;
+            transition: 0.5s;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px; /* Decrease top padding to adjust menu starting position */
+        }
+        .nav-menu img {
+            width: 120px; /* Adjust size as needed */
+            height: 120px; /* Adjust size as needed */
+            border-radius: 50%;
+            margin-top: 20px; /* Adjust to position the image */
+            margin-bottom: 30px; /* Adjust space below the image */
+        }
+        .nav-menu .nav-menu-inner {
+            width: 100%;
+        }
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-menu ul li {
+            margin: 20px 0;
+        }
+        .nav-menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .close-nav-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        .open-nav-menu {
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <span class="open-nav-menu navbar-toggler-icon"></span>
+        </div>
+    </nav>
+
+    <!-- navigation menu start  -->
+    <nav class="nav-menu">
+        <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+        <img src="../static/assets/images/me.jpg" alt="Profile Picture"> <!-- Profile picture here -->
+        <div class="nav-menu-inner">
+            <ul>
+                <li><a href="#section-home" class="link-item inner-shadow active">Home</a></li>
+                <li><a href="#My_projects" class="link-item outer-shadow hover-in-shadow">Projects</a></li>
+                <li><a href="#experience" class="link-item outer-shadow hover-in-shadow">Experience</a></li>
+                <li><a href="#education" class="link-item outer-shadow hover-in-shadow">Education</a></li>
+                <li><a href="#skills" class="link-item outer-shadow hover-in-shadow">Skills</a></li>
+                <li><a href="#certifications" class="link-item outer-shadow hover-in-shadow">Certificates</a></li>
+                <li><a href="#social" class="link-item outer-shadow hover-in-shadow">Profiles</a></li>
+                <li><a href="#about-me" class="link-item outer-shadow hover-in-shadow">About me</a></li>
+                <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Get In Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navigation menu end  -->
+
+    <section class="site-hero" style="background-image: url(../static/assets/images/ds.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+                <div class="col-md-10 text-center pt-5">
+                    <h1 class="site-heading special-font">Hello, I'm</h1>
+                    <a href="#" class="glitch site-heading-center">Adesh Laxman Tengale</a>
+                    <div class="text_1 site-heading-center"><b>Data Analyst | Data Scientist | Python Programmer</b></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<hr style="border: 1px solid #ccc; margin: 5px 0;">   
+  
+
+    <section id="My_projects" class="site-hero1" style="background-color:rgba(14, 14, 13, 0.888)" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2><strong>My</strong> <strong>Projects</strong></h2>
+            </div>
+    
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-lg-4">
+                    <div class="project-box section-heading text-center" data-toggle="modal" data-target="#projectModal1">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="image img-fluid" src="../static/assets/images/p1.png" alt="">
+                        </div>
+                        <h4>Personal Portfolio Website</h4>
+                        <a>Python-Flask Project Using HTML,CSS,JS</a>
+                        <p>June 24- July 24</p>
+                        <a href="https://github.com/Adesh4262/Personal-Portfolio-Website-Using-Flask" class="btn btn-1">Get Code</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-4">
+                    <div class="project-box section-heading text-center" data-toggle="modal" data-target="#projectModal2">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="image img-fluid" src="../static/assets/images/p2.jpeg" alt="">
+                        </div>
+                        <h4>Frauds Detection Model</h4>
+                        <a>Data Science Project</a>
+                        <p>Apr 24- Jun 24</p>
+                        <a href="https://github.com/Adesh4262/Evaluation-insurance-claims-fraud-detection-project" class="btn btn-1">Get Code</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-4">
+                    <div class="project-box section-heading text-center" data-toggle="modal" data-target="#projectModal3">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="image img-fluid" src="../static/assets/images/p3.png" alt="">
+                        </div>
+                        <h4>Superstore Profile Report</h4>
+                        <a>Power-Bi Project</a>
+                        <p>Jun 24- July 24</p>
+                        <a href="https://github.com/Adesh4262/Sample-Superstore-profile-report-Power-Bi-Project" class="btn btn-1">Get Code</a>
+                    </div>
+                </div>
+            </div>
+            
+          
+            
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-lg-4">
+                    <div class="project-box section-heading text-center" data-toggle="modal" data-target="#projectModal4">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="image img-fluid" src="../static/assets/images/p4.png" alt="">
+                        </div>
+                        <h4>HR Analytics Dashboard</h4>
+                        <a>Tableau Project</a>
+                        <p>May 24- Jun 24</p>
+                        <a href="https://github.com/Adesh4262/HR-Analytics---Tableau-Project" class="btn btn-1">Get Code</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-4">
+                    <div class="project-box section-heading text-center" data-toggle="modal" data-target="#projectModal5">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="image img-fluid" src="../static/assets/images/p5.png" alt="">
+                        </div>
+                        <h4>Coffee Shop Sale Analysis</h4>
+                        <a>Excel Project</a>
+                        <p>Feb 24-Mar 24</p>
+                        <a href="https://github.com/Adesh4262/Coffee-Shop-Sales-Analysis-Project" class="btn btn-1">Get Code</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-4">
+                    <div class="project-box section-heading text-center" data-toggle="modal" data-target="#projectModal6">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="image img-fluid" src="../static/assets/images/p6.jpg" alt="">
+                        </div>
+                        <h4>Virtual Assistant</h4>
+                        <a>Python Project</a>
+                        <p>Dec 23- Mar 24</p>
+                        <a href="https://github.com/Adesh4262/Virtual-Assistant-Using-Python" class="btn btn-1">Get Code</a>
+                    </div>
+                </div>
+            </div>
+            
+    </section>
+    
+    <!-- Modal Structure -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Personal Portfolio Website</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="thumb">
+                        <div class="overlay overlay-bg"></div>
+                        <img class="image img-fluid" src="../static/assets/images/p1.png" alt="">
+                    </div>
+                    
+                    <p>Technologies Used:<p/>
+                        <p>Python Flask: Utilized as the web framework for building and deploying the web application. Flask's simplicity and flexibility make it ideal for developing dynamic web applications quickly..</p>
+                        <p>HTML: Used for structuring the content of the website. Each section, including Home, My Projects, Experience, Education, Skills, Certifications, Social Media Profiles, About Me, and Contact Me, was carefully crafted using semantic HTML elements.</p>
+                        <p>CSS: Employed for styling the website to ensure a visually appealing and user-friendly interface. Custom styles were written to handle the layout, typography, colors, and responsive design.</p>
+                        <p>JavaScript: Incorporated for interactive elements and enhanced user experience. JavaScript was used to create dynamic features like form validation, animations, and the hamburger menu for navigation.</p>
+                        <p>Matplotlib & Seaborn: Used for data visualization to explore the dataset and identify patterns.</p>
+                        <p>Jupyter Notebook: Environment for developing and testing the model.</p>
+                        <p>Use Case in Data Science:</p>
+                        <p>The personal portfolio website demonstrates how web development skills can complement a data science career. A well-structured and visually appealing portfolio allows data scientists to effectively showcase their projects, skills, and achievements to potential employers and clients. By integrating interactive elements and dynamic content, the website provides a comprehensive overview of the data scientist's capabilities and serves as a powerful tool for professional networking and job applications.</p>                        
+                    </p>
+                    </p>
+                    <a href="https://github.com/Adesh4262/Personal-Portfolio-Website-Using-Flask" class="btn btn-1">Get Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel2">Automobile Insurance Claims Fraud Detecction Model Using Machine Learning</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="thumb">
+                        <div class="overlay overlay-bg"></div>
+                        <img class="image img-fluid" src="../static/assets/images/p2.jpeg" alt="">
+                    </div>
+                    <p>In this project, I developed a machine learning model to detect fraudulent insurance claims. The aim was to identify patterns and anomalies in the data that are indicative of fraud, thus helping insurance companies reduce losses and improve their claims processing efficiency.<p/>
+                        <p>Technologies Used:<p/>
+                            <p>Python: Used for data manipulation, analysis, and model building.</p>
+                            <p>Pandas: Utilized for data preprocessing and manipulation.</p>
+                            <p>NumPy: Employed for numerical operations and data handling.</p>
+                            <p>Scikit-Learn: Implemented for building and evaluating machine learning models.</p>
+                            <p>Matplotlib & Seaborn: Used for data visualization to explore the dataset and identify patterns.</p>
+                            <p>Jupyter Notebook: Environment for developing and testing the model.</p>
+                            <p>Use Case in Data Science:</p>
+                            <p>The project showcases how data science techniques can be applied to the insurance industry to detect fraudulent activities. By leveraging machine learning algorithms, the model can analyze historical claims data, identify suspicious patterns, and flag potentially fraudulent claims for further investigation. This helps in minimizing financial losses and enhancing the efficiency of the claims review process.</p>                        
+                        </p>
+                        </p>
+                    <a href="https://github.com/Adesh4262/Evaluation-insurance-claims-fraud-detection-project" class="btn btn-1">Get Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel3">SuperStore Profile Report Using Power-Bi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="thumb">
+                        <div class="overlay overlay-bg"></div>
+                        <img class="image img-fluid" src="../static/assets/images/p3.png" alt="">
+                    </div>
+                    <p>In this project, I created an interactive and insightful Superstore profile report using Power BI. The report is designed to provide comprehensive insights into the sales, profit, and customer trends of a retail superstore. By leveraging the data visualization capabilities of Power BI, the report offers an in-depth analysis of key performance metrics, helping stakeholders make informed business decisions.
+                    <p>Technologies Used:</p>
+                    <p>Power BI: Utilized as the primary tool for data visualization and report creation. Power BI's powerful features allow for the creation of interactive and visually appealing dashboards and reports.</p>
+                    <p>Microsoft Excel: Used for initial data preparation and cleaning before importing into Power BI.</p>
+                    <p>DAX (Data Analysis Expressions): Employed for creating calculated columns and measures to perform complex data calculations and aggregations within Power BI.</p>
+                    <p>Power Query: Utilized for data transformation and cleaning processes within Power BI.</p>
+                    <p>Use Case in Data Science:</p>
+                    <p>The Superstore profile report project showcases the application of data visualization and business intelligence techniques in the retail sector. By analyzing sales data, profit margins, and customer demographics, the report helps identify trends, patterns, and anomalies that can drive strategic business decisions. Key use cases include:</p>
+                    <p>Sales Analysis: Track and analyze sales performance across different regions, product categories, and time periods. This helps in understanding which products and regions are performing well and which need attention.</p>
+                    <p>Profitability Analysis: Assess profit margins and identify the most profitable products and customer segments. This aids in optimizing pricing strategies and marketing efforts.</p>
+                    <p>Customer Insights: Gain insights into customer behavior, including purchase patterns and preferences. This information can be used to tailor marketing campaigns and improve customer satisfaction.</p>
+                    <p>Inventory Management: Monitor inventory levels and turnover rates to ensure optimal stock levels and reduce carrying costs.</p>
+                    <p>Performance Monitoring: Provide stakeholders with a real-time view of key performance indicators (KPIs), enabling them to make data-driven decisions promptly.</p>
+                    <a href="https://github.com/Adesh4262/Sample-Superstore-profile-report-Power-Bi-Project" class="btn btn-1">Get Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="projectModal4" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel4">HR Analytis Dashboard Using Tableau</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="thumb">
+                        <div class="overlay overlay-bg"></div>
+                        <img class="image img-fluid" src="../static/assets/images/p4.png" alt="">
+                    </div>
+                    <p>In this project, I developed an HR analytics dashboard using Tableau to provide a comprehensive overview of key human resources metrics. The dashboard is designed to help HR managers and executives make data-driven decisions by visualizing employee data, tracking workforce trends, and identifying areas for improvement in talent management.</p>
+                    
+                        <p>Technologies Used:</p>
+                        <p>Tableau: Utilized as the primary tool for data visualization and dashboard creation. Tableau's drag-and-drop interface and powerful visualization capabilities make it ideal for creating interactive and user-friendly dashboards.</p>
+                        <p>Microsoft Excel: Used for initial data preparation and cleaning before importing into Tableau.</p>
+                        <p>Tableau Prep: Employed for data cleaning, transformation, and preparation to ensure the data is in the right format for analysis.</p>
+                        <p>SQL: Used for querying and extracting data from databases to be used in the Tableau dashboard.</p>
+
+                        <p>Use Case in Data Science:</p>
+                        <p>The HR analytics dashboard project demonstrates the application of data visualization and analytics in the field of human resources. By leveraging Tableau, the dashboard provides insights into various HR metrics, helping organizations optimize their workforce management and improve employee satisfaction. Key use cases include:</p>
+                        <p>Employee Demographics: Visualize the composition of the workforce in terms of age, gender, department, and tenure. This helps in understanding diversity and planning for workforce changes.</p>
+                        <p>Attrition Analysis: Track employee turnover rates and identify patterns or factors contributing to attrition. This aids in developing strategies to retain talent and reduce turnover costs.</p>
+                        <p>Performance Metrics: Analyze employee performance metrics, such as productivity and goal achievement. This supports performance management processes and identifies high-performing employees for recognition and development.</p>
+                        <p>Recruitment Analytics: Monitor the effectiveness of recruitment efforts by tracking metrics such as time-to-hire, cost-per-hire, and source of hire. This helps in optimizing recruitment strategies and improving the quality of hires.</p>
+                        <p>Training and Development: Evaluate the impact of training programs on employee performance and career progression. This ensures that training investments are aligned with organizational goals and employee needs.</p>
+                        <p>Absenteeism and Attendance: Track employee attendance patterns and identify trends in absenteeism. This supports efforts to improve employee well-being and reduce absenteeism-related costs.</p>
+
+                    <a href="https://github.com/Adesh4262/HR-Analytics---Tableau-Project" class="btn btn-1">Get Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="projectModal5" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel5">Coffee Shop Sales Analysis Using MS-Excel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="thumb">
+                        <div class="overlay overlay-bg"></div>
+                        <img class="image img-fluid" src="../static/assets/images/p5.png" alt="">
+                    </div>
+                    <p>In this project, I conducted a sales analysis for a coffee shop using Microsoft Excel. The objective was to gain insights into the coffee shop's sales performance, identify trends, and provide actionable recommendations to improve overall business efficiency and profitability.</p>
+                    
+                        <p>Technologies Used:</p>
+                        <p>Microsoft Excel: Used for data cleaning, analysis, and visualization. Excel's functionalities such as pivot tables, charts, and formulas were employed to analyze and present the data effectively.</p>
+
+                        <p>Use Case in Data Science:</p>
+                        <p>The Coffee Shop Sales Analysis project highlights the application of data analysis techniques using Microsoft Excel in the retail and hospitality industry. By analyzing sales data, the project provides valuable insights into customer preferences, sales trends, and operational efficiency. Key use cases include:</p>
+                        <p>Sales Performance Analysis: Track and analyze daily, weekly, and monthly sales performance. This helps in understanding peak sales periods and identifying slow days that may require promotional efforts.</p>
+                        <p>Product Analysis: Evaluate the performance of different products, identifying best-sellers and underperforming items. This information can guide inventory decisions and menu adjustments.</p>
+                        <p>Customer Insights: Analyze customer purchase patterns and preferences. Understanding customer behavior helps in tailoring marketing strategies and improving customer satisfaction.</p>
+                        <p>Revenue Analysis: Assess revenue generated from different sales channels (e.g., dine-in, takeout, delivery). This aids in optimizing channel-specific strategies and improving overall revenue.</p>
+                        <p>Trend Analysis: Identify seasonal trends and sales patterns over time. This information is crucial for planning marketing campaigns and managing inventory effectively.</p>
+                        <p>Operational Efficiency: Evaluate key operational metrics such as average transaction value, sales per employee, and sales per hour. This supports efforts to improve staff scheduling and operational workflows.</p>
+
+                    <a href="https://github.com/Adesh4262/Coffee-Shop-Sales-Analysis-Project" class="btn btn-1">Get Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="projectModal6" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel6">Virtual Assistant Using Python</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="thumb">
+                        <div class="overlay overlay-bg"></div>
+                        <img class="image img-fluid" src="../static/assets/images/p6.jpg" alt="">
+                    </div>
+                    <p>In this project, I developed a virtual assistant using Python. The virtual assistant is capable of performing a variety of tasks such as responding to user queries, fetching information from the web, managing emails, setting reminders, and more. The goal was to create an intelligent assistant that can enhance productivity and streamline daily activities.</p>
+                    
+                        <p>Technologies Used:</p>
+                        <p>Python: The core programming language used to build the virtual assistant, leveraging its simplicity and extensive libraries.</p>
+                        <p>SpeechRecognition: Used for converting spoken language into text.</p>
+                        <p>Pyttsx3: Employed for converting text to speech, allowing the virtual assistant to respond audibly.</p>
+                        <p>Natural Language Toolkit (NLTK): Utilized for natural language processing tasks such as text parsing and understanding user queries.</p>
+                        <p>APIs (Application Programming Interfaces): Various APIs such as Google Search API, Weather API, and Email APIs were integrated to fetch real-time information and perform tasks.</p>
+                        <p>Datetime Module: Used for managing dates and times, such as setting reminders and alarms.</p>
+                        <p>Web Scraping (BeautifulSoup): Employed for extracting information from websites when APIs are not available.</p>
+
+                        <p>Use Case in Data Science:</p>
+                        <p>The Virtual Assistant project demonstrates the application of data science and artificial intelligence in creating intelligent systems that can interact with users and perform a variety of tasks. Key use cases include:</p>
+                        <p>Personal Productivity: The virtual assistant can manage emails, set reminders, and schedule appointments, helping users stay organized and manage their time efficiently.</p>
+                        <p>Information Retrieval: By integrating various APIs and web scraping techniques, the assistant can fetch real-time information such as weather updates, news, and search results, providing users with quick access to the information they need.</p>
+                        <p>Natural Language Processing: The project showcases the use of NLP techniques to understand and respond to user queries, enabling more natural and intuitive interactions.</p>
+                        <p>Automation: Tasks such as sending emails, setting alarms, and fetching data can be automated, reducing the need for manual intervention and increasing efficiency.</p>
+                        <p>Voice Interaction: The speech recognition and text-to-speech capabilities allow for hands-free operation, making it convenient for users to interact with the assistant while performing other tasks.</p>
+
+                    <a href="https://github.com/Adesh4262/Virtual-Assistant-Using-Python" class="btn btn-1">Get Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<hr style="border: 1px solid #ccc; margin: 5px 0;">   
+<section id="experience" class="site-hero" style="background-color:rgba(14, 14, 13, 0.888)" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2><strong>Experience</strong></h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="experience-box interactive-box">
+                    <h4>Data Science And Machine Learning With Python Internship</h4>
+                    <p>at Radical Technologies Kharadi Pune</p>
+                    <p><i class="fas fa-calendar-alt"></i> May 2023 - Nov 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="experience-box interactive-box">
+                    <h4>Python Internship</h4>
+                    <p>at Pantech Solution, Pune</p>
+                    <p><i class="fas fa-calendar-alt"></i> Dec 2022 - Feb 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr style="border: 1px solid #ccc; margin: 5px 0;">
+
+<section id="education" class="site-section1" style="background-color:rgba(14, 14, 13, 0.888)" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 style="color: rgb(246, 244, 244)"><strong>Education</strong></h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="education-box interactive-box">
+                    <h4>BE In Electronics And Telecommunication Engineering</h4>
+                    <p>at JSPM'S Bhivarabai Sawant Institute Of Technology And Research Wagholi</p>
+                    <p><i class="fas fa-calendar-alt"></i> Jan 2021 - June 2024</p>
+                    <p>Grade: 75%</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="education-box interactive-box">
+                    <h4>Science (HSC)</h4>
+                    <p>at L.R.G.Palande Junior College Mukhai</p>
+                    <p><i class="fas fa-calendar-alt"></i> June 2020</p>
+                    <p>Grade: 65%</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="education-box interactive-box">
+                    <h4>10TH (SSC)</h4>
+                    <p>at S.B.Viddhyalaya Koyali</p>
+                    <p><i class="fas fa-calendar-alt"></i> June 2018</p>
+                    <p>Grade: 83%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .experience-box, .education-box {
+        background-color: white;
+        border: 2px solid black;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: black;
+        font-weight: bold;
+    }
+
+    .experience-box:hover, .education-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .interactive-box {
+        color: black;
+    }
+
+    .fa-calendar-alt {
+        margin-right: 5px;
+        color: black;
+    }
+</style>
+
+
+    
+<hr style="border: 1px solid #ccc; margin: 5px 0;">   
+
+<section id="skills" class="site-section" style="background-color:rgba(196, 189, 189, 0.888)" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2><strong>Skills</strong></h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="skills-container">
+                    <div class="skill">
+                        <h4>Python</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>Power-BI</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>Machine Learning</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>Advanced MS-Excel</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>Pandas,Seaborn</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skills-container">
+                    <div class="skill">
+                        <h4>SQL</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>Tableau</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>Data Visualization</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>Artificial Intelligence</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>MatplotLib</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skills-container">
+                    <div class="skill">
+                        <h4>Data Analytics</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>Data Manipulation</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>Data Management</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>business Analysis</h4>
+                    </div>
+                    <div class="skill">
+                        <h4>Communicating Insights And Analysis</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<hr style="border: 1px solid #ccc; margin: 5px 0;">   
+
+    <section id="certifications" class="site-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2><strong>Certifications</strong></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box text-center" data-toggle="modal" data-target="#certificateModal1">
+                        <img class="image img-fluid" src="../static/assets/images/1.jpg" alt="">
+                        <h4>Data Science And Machine Learning With Python Internship</h4>
+                        <p>Issued by: Radical Technologies Pune</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box text-center" data-toggle="modal" data-target="#certificateModal2">
+                        <img class="image img-fluid" src="../static/assets/images/2.jpg" alt="">
+                        <h4>Data Science And Machine Learning With Python Course</h4>
+                        <p>Issued by: Radical Technologies Pune</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box text-center" data-toggle="modal" data-target="#certificateModal3">
+                        <img class="image img-fluid" src="../static/assets/images/3.jpg" alt="">
+                        <h4>Python For Data Science , AI & Development</h4>
+                        <p>Issued by: IBM (Coursera) </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box text-center" data-toggle="modal" data-target="#certificateModal4">
+                        <img class="image img-fluid" src="../static/assets/images/4.jpg" alt="">
+                        <h4>Python Internship</h4>
+                        <p>Issued by: Pantech Solutions Pune</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box text-center" data-toggle="modal" data-target="#certificateModal5">
+                        <img class="image img-fluid" src="../static/assets/images/5.jpg" alt="">
+                        <h4>Database Management System & SQL Course</h4>
+                        <p>Issued by: Udemy</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box text-center" data-toggle="modal" data-target="#certificateModal6">
+                        <img class="image img-fluid" src="../static/assets/images/6.jpg" alt="">
+                        <h4>Power-Bi Course</h4>
+                        <p>Issued by: Great Learning</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box text-center" data-toggle="modal" data-target="#certificateModal7">
+                        <img class="image img-fluid" src="../static/assets/images/7.jpg" alt="">
+                        <h4>Tableau Course</h4>
+                        <p>Issued by: Great Learning</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box text-center" data-toggle="modal" data-target="#certificateModal8">
+                        <img class="image img-fluid" src="../static/assets/images/8.jpg" alt="">
+                        <h4>Data Visualization</h4>
+                        <p>Issued by: TCS(Forage)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Certificate Modals -->
+        <div class="modal fade" id="certificateModal1" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModalLabel1">Data Science And Machine Learning With Python Internship</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image img-fluid" src="../static/assets/images/1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="certificateModal2" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModalLabel2">Data Science And Machine Learning With Python Course</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image img-fluid" src="../static/assets/images/2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="certificateModal3" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModalLabel3">Python For Data Science , AI & Development Certificate</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image img-fluid" src="../static/assets/images/3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="certificateModal4" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModalLabel4">Python Internship</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image img-fluid" src="../static/assets/images/4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="certificateModal5" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModalLabel5">DBMS & SQL Course</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image img-fluid" src="../static/assets/images/5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="certificateModal6" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModalLabel5">Power-Bi Course Certificate</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image img-fluid" src="../static/assets/images/6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="certificateModal7" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModalLabel7">Tableau Certificate</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image img-fluid" src="../static/assets/images/7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="certificateModal8" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModalLabel8">Data Visualization Certificate</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="image img-fluid" src="../static/assets/images/8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<hr style="border: 1px solid #2c2b2b; margin: 2px 0;">
+    
+
+<section id="social" class="site-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2><strong>My Profiles</strong></h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <div class="social-profile">
+                    <img class="image img-fluid" src="../static/assets/images/linkedin.png" alt="LinkedIn">
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/adesh-tengale-223153213/" class="btn btn-1" target="_blank">Go to Profile</a>
+                </div>
+            </div>
+            <div class="col-md-5 text-center">
+                <div class="social-profile">
+                    <img class="image img-fluid" src="../static/assets/images/git.png" alt="GitHub">
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/Adesh4262" class="btn btn-1" target="_blank">Go to Profile</a>
+                </div>
+            </div>
+            <div class="col-md-5 text-center">
+                <div class="social-profile">
+                    <img class="image img-fluid" src="../static/assets/images/FREELANCER.png" alt="Freelancing">
+                    <h4>Freelancing</h4>
+                    <a href="https://www.freelancer.com/u/Adesh51" class="btn btn-1" target="_blank">Go to Profile</a>
+                </div>
+            </div>
+            <div class="col-md-5 text-center">
+                <div class="social-profile">
+                    <img class="image img-fluid" src="../static/assets/images/INDDED.png" alt="Indeed">
+                    <h4>Indeed</h4>
+                    <a href="https://profile.indeed.com/?hl=en_IN&co=IN&from=gnav-jobseeker-profile--profile-one-frontend" class="btn btn-1" target="_blank">Go to Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+<hr style="border: 1px solid #292424; margin: 2px 0;">
+
+<section id="about-me" class="site-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2><strong>About Me</strong></h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="image img-fluid" src="../static/assets/images/me.jpg" alt="Adesh Tengale">
+            </div>
+            <div class="col-md-6">
+                <p class="description-text">"Goal-Driven and detail-oriented Data Scientist with expertise in statistical analysis, machine learning, and Python development. Skilled in data visualization using Power BI and Tableau, and proficient in database management with MySQL and MS SQL Server. Led projects such as Predictive Insights Explorer and Face Detection using OpenCV, demonstrating strong analytical and problem-solving abilities. Effective communicator with a commitment to innovation and continuous learning."</p>
+                <a href="../static/assets/images/adesh tengale.pdf" class="btn btn-1" target="_blank">Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<hr style="border: 1px solid #282626; margin: 2px 0;">
+
+<section id="contact" class="site-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2><strong>Get In Touch</strong></h2>
+        </div>
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-6">
+                <div class="contact-item contact-card">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-phone"></i>
+                        <span class="contact-span">Phone</span>
+                        <p class="contact-p">+91 9175864262</p>
+                    </div>
+                </div>
+                <div class="contact-item contact-card">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-envelope"></i>
+                        <span class="contact-span">Email Address</span>
+                        <p class="contact-p">
+                            <a href="mailto:adeshtengale4141@gmail.com">adeshtengale4141@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-item contact-card">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="contact-span">Address</span>
+                        <p class="contact-p">Pune, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-1">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.open-nav-menu').click(function() {
+                $('.nav-menu').css('width', '10%');
+            });
+            $('.close-nav-menu').click(function() {
+                $('.nav-menu').css('width', '0');
+            });
+            $('.link-item').click(function() {
+                $('.nav-menu').css('width', '0');
+            });
+        });
+    </script>
+</body>
+</html>
+
+

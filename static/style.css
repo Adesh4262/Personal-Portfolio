@@ -1,0 +1,507 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.site-section {
+    padding: 60px 0;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px; /* Adjust width as needed */
+    background: #343a40;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px; /* Decrease top padding to adjust menu starting position */
+}
+
+.nav-menu img {
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-top: 20px; /* Adjust to position the image */
+    margin-bottom: 30px; /* Adjust space below the image */
+}
+
+
+/* project section*/
+
+
+.project-box {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Add transitions to the existing styles */
+    background-color: #181111;
+    border: 3px solid #fdfdfc;
+    box-shadow: 0 4px 8px rgba(23, 21, 21, 0.1);
+    cursor: pointer; /* Add a cursor style to indicate that the box is interactive */
+  }
+
+  .project-box.active {
+    background-color: #444; /* Change the background color when active */
+    transform: scale(1.1); /* Add a scale effect when active */
+  }
+  
+  .project-box:hover {
+    background-color: #333; /* Change the background color on hover */
+    box-shadow: 0 8px 16px rgba(23, 21, 21, 0.2); /* Increase the box shadow on hover */
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+  }
+  
+  .project-title {
+    color: #fdfdfc;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-description {
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-link {
+    display: inline-block;
+    background-color: #fdfdfc;
+    color: #181111;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: #e6e6e6;
+  }
+.project-box .thumb {
+    height: 200px; /* Set a fixed height for the image container */
+    width: 100%; /* Make the image container take the full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-box .thumb img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover; /* Ensure the image covers the container properly */
+}
+
+.project-box h4,
+.project-box a,
+.project-box p {
+    margin: 10px 0;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+
+/* Button Styles */
+.btn-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-1:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal-content {
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.modal-body p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills-container {
+    text-align: center;
+}
+
+.skill h4 {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align:justify;
+    margin: 10px 0;
+}
+
+/* Center the columns */
+.row.justify-content-center {
+    justify-content: center;
+}
+/* Certification Box Styles */
+.certification-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    height: 310px; /* Set a fixed height for the image container */
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certification-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(138, 134, 134, 0.1);
+}
+
+.certification-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.certification-box h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.certification-box p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Modal Styles */
+.modal-content {
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Center the columns */
+.row {
+    justify-content: center;
+}
+
+.social-profile {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 150%; /* Adjusted width to be responsive */
+    max-width: 300px; /* Added max-width for better alignment */
+    height: 400px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin: 15px auto; /* Center align with margin */
+}
+
+.social-profile img {
+    max-width: 110%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+.social-profile h4 {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.social-profile:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+.btn-1 {
+    background-color: #343a40;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #495057;
+}
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    margin-bottom: 20px;
+}
+
+.contact-item-inner {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item-inner:hover {
+    transform: scale(1.1);
+}
+
+.contact-span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    background-color: #343a40;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #495057;
+}
+
+.outer-shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    margin-bottom: 20px;
+}
+
+.contact-item-inner {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-item-inner:hover {
+    transform: scale(1.1);
+}
+
+.contact-span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    background-color: #343a40;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #495057;
+}
+
+.outer-shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.education-box {
+    background-position: center;
+    height: 250px; /* Set a fixed height for the image container */
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-color: #090a0a;
+    border-color: #090a0a;
+    border-width: 2px;
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 10px 0; /* Margin around the box */
+    box-shadow: 0 4px 8px rgba(245, 241, 241, 0.5); /* Shadow for depth */
+    text-align: center; /* Center text inside the box */
+    transition: transform 0.2s ease-in-out; /* Add transition effect */
+}
+
+.education-box:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(130, 112, 112, 0.8); /* Increase shadow on hover */
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.experience-box {
+    background-position: center;
+    height: 250px; /* Set a fixed height for the image container */
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-color: #d2cccc;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 10px 0; /* Margin around the box */
+    box-shadow: 0 4px 8px rgba(245, 241, 241, 0.5); /* Shadow for depth */
+    text-align: center; /* Center text inside the box */
+    transition: transform 0.2s ease-in-out; /* Add transition effect */
+}
+
+.experience-box:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(130, 112, 112, 0.8); /* Increase shadow on hover */
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+  }
+
+hr1 {
+    border: 1px solid hsl(0, 3%, 48%);
+    margin: 20px 0;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(0, 3%, 48%);
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        margin-bottom: 20px;
+    }
+}
+
+/* Adjusting description font size and family */
+.description-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25em; /* Adjust size as needed */
+    line-height: 1.6;
+    text-align: justify;
+}
